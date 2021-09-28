@@ -1,0 +1,10 @@
+# 원의 둘레와 면적을 구하는 프로그램을 작성하시오.
+# 반지름은 입력받을 것
+
+half=int(input('반지름을 입력하세요: '))
+round=half*2*3.14
+big=half*half*3.14
+
+print('반지름: %dcm' % half)
+print('원의 둘레: %.2fcm' % round)
+print('원의 면적: %.2fcm2' % big)
