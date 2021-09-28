@@ -1,0 +1,28 @@
+# 온라인 서점에서 결제할 금액을 계산하는 프로그램을 작성하시오
+
+book=int(input('책 값을 입력하세요: '))
+sales=int(input('할인율을 입력하세요(%): '))
+delivery=int(input('배송료를 입력하세요: '))
+
+pay=book-(book*15/100)+delivery
+
+print('결제 금액: %d원' % pay)
+
+# 이름, 현재년, 출생년을 입력받아 나이를 계산하는 프로그램을 작성하시오
+
+name=str(input('이름을 입력하세요: '))
+this=int(input('현재년을 입력하세요: '))
+birth=int(input('탄생년을 입력하세요: '))
+
+age=this-birth+1
+
+print('%s님의 나이는 %d입니다.' % (name, age))
+
+# 년월일을 입력받아 ####-##-##의 형태로 출력하는 프로그램을 작성하시오.
+
+year=int(input('년도를 입력하세요: '))
+month=int(input('월을 입력하세요: '))
+day=int(input('일을 입력하세요: '))
+
+a='%d-%02d-%02d' % (year, month, day)
+print(a)
